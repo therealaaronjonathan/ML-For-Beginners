@@ -4,7 +4,7 @@ import pickle
 
 app = Flask(__name__)
 
-model = pickle.load(open("./ufo-model.pkl", "rb"))
+model = pickle.load(open("/Users/aj/ML-For-Beginners/3-Web-App/1-Web-App/ufo-model.pkl", "rb"))
 
 
 @app.route("/")
@@ -29,4 +29,4 @@ def predict():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True) 
